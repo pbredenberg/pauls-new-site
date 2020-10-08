@@ -7,6 +7,12 @@ This is pre-configured with:
 - SCSS
 - A bare-bones theme
 
+## Let's Get On With It Already!
+
+You, throwing caution to the wind, are the sort of person who loves to click buttons!
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/pbredenberg/typescript-vuepress-template-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
 ## Gotchas
 
 1. Restart dev server after adding components to the theme
