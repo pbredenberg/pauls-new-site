@@ -1,13 +1,13 @@
 {
-  "name": "typescript-vuepress-template",
+  "name": "typescript-vuepress-template-netlify-cms",
   "version": "0.0.1",
-  "description": "",
+  "description": "A VuePress template with Netlify CMS configured.",
   "main": "index.js",
   "authors": {
     "name": "Paul Bredenberg",
     "email": "paulbredenberg@gmail.com"
   },
-  "repository": "/vuepress-sites",
+  "repository": "https://github.com/pbredenberg/typescript-vuepress-template-netlify-cms",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
