@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -10,19 +10,32 @@ export default {
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['script', { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    // For redirecting to netlify admin.
+    // See: https://www.netlifycms.org/docs/add-to-your-site/#authentication
+    // Also see: https://github.com/vuejs/vuepress/issues/790
+    // TODO: See if this can be executed via runtime plugin or in an otherwise
+    // cleaner way.
+    ['script', {}, `
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    `]
   ],
 
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
     repo: '',
@@ -59,11 +72,11 @@ export default {
   },
 
   /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   * Apply plugins，ref：https://vuepress.vuejs.org/plugin/
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    'vuepress-plugin-typescript',
+    'vuepress-plugin-typescript'
   ]
 }
