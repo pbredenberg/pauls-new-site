@@ -1,3 +1,3 @@
-# typescript-vuepress-template
+# typescript-vuepress-template-netflify-cms
 
-A VuePress template with TypeScript configured, ready to develop against.
+A Netlify VuePress project with TypeScript configured, ready to develop against.
