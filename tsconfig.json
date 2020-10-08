@@ -1,10 +1,9 @@
 {
   "include": [
-    "src/.vuepress/**/*.ts",
-    "src/.vuepress/**/*.vue",
-    "src/.vuepress/plugins/netlify-authorization-redirector.js",
-    "src/.vuepress/enhanceApp.js",
-    "src/.vuepress/config.js"
+    "_content/.vuepress/**/*.ts",
+    "_content/.vuepress/**/*.vue",
+    "_content/.vuepress/enhanceApp.js",
+    "_content/.vuepress/config.js"
   ],
   "exclude": [
     "node_modules"

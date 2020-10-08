@@ -3,7 +3,7 @@ backend:
   branch: master
 # Uncomment if you want the editorial workflow:
 # publish_mode: editorial_workflow
-media_folder: "src/.vuepress/public/images"
+media_folder: "_content/.vuepress/public/images"
 collections:
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
@@ -11,5 +11,8 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
+      # This is the default layout for the site, the component is found here:
+      # `_content/.vuepress/theme/layouts/Layout.vue`
+      - {label: "Layout", name: "layout", widget: "hidden", default: "Layout"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

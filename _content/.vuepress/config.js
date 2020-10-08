@@ -1,3 +1,6 @@
+/**
+ * TODO: Wouldn't it be nice if we could write this in TypeScript?
+ */
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -33,44 +36,6 @@ module.exports = {
       }
     `]
   ],
-
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   */
-  themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
-  },
-
   /**
    * Apply plugins，ref：https://vuepress.vuejs.org/plugin/
    */
