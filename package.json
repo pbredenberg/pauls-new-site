@@ -1,0 +1,21 @@
+{
+  "name": "typescript-vuepress-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "Paul Bredenberg",
+    "email": "paulbredenberg@gmail.com"
+  },
+  "repository": "/vuepress-sites",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "4.0.3",
+    "vuepress": "1.5.3",
+    "vuepress-plugin-typescript": "0.3.1"
+  }
+}
