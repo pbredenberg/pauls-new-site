@@ -39,9 +39,5 @@ module.exports = {
   /**
    * Apply plugins，ref：https://vuepress.vuejs.org/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    'vuepress-plugin-typescript'
-  ]
+  plugins: ['vuepress-plugin-typescript']
 }
